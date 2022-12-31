@@ -77,8 +77,9 @@
         </div>
         <div class="stage-container remove">
             <div class="page_two hide">
-                <div id="text" style="display:none;"><p>还有<span id="time"></span>就是2023年啦。<br><span id="text1"></span><br>廖璐璐，新年快乐。<br><br> 请狠狠的点击屏幕吧 ~ ~ <span id="copyright"></span></p></div>
-                <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
+                <!-- <div id="text" style="display:none;"><p>还有<span id="time"></span>就是2023年啦。<br><span id="text1"></span><br>小学姐，新年快乐。<br><br> 请狠狠的点击屏幕吧 ~ ~ <span id="copyright"></span></p></div>
+                --> <div id="text" style="display:none;"><p>已经是2023年啦。<br><br>新年快乐。<br><br> 请狠狠的点击屏幕吧 ~ ~ <span id="copyright"></span></p></div>
+                    <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
             </div>
             <div class="canvas-container">
                 <canvas id="trails-canvas"></canvas>
@@ -251,10 +252,10 @@
     var diff2Minutes = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours) / minutes)
     var diff2Seconds = Math.floor((diff2 - (diff2Years * 365 + diff2Days) * days - diff2Hours * hours - diff2Minutes *
         minutes) / seconds)
-     if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是1月1日,祝你"+todayYear+"新年快乐！"}}
-     else{document.getElementById("text1").innerHTML = ''}// "提前祝你"+newYear+"新年快乐"}
-     document.getElementById("time").innerHTML =  //diffDays + "天" + 
-          diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒"
+     // if(todayMonth==1){if(todayDate==1){document.getElementById("text1").innerHTML =  "现在是1月1日,祝你"+todayYear+"新年快乐！"}}
+     // else{document.getElementById("text1").innerHTML = ''}// "提前祝你"+newYear+"新年快乐"}
+     //document.getElementById("time").innerHTML =  //diffDays + "天" + 
+       //   diffHours + "小时" + diffMinutes + "分钟" + diffSeconds + "秒"
 }
 time()
 </script>
